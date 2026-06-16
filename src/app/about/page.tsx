@@ -2,8 +2,6 @@
 
 import { useRouter } from 'next/navigation';
 import { ArrowLeft, Shield, Crown, Code2, GraduationCap, Heart, Sparkles, Github, ExternalLink } from 'lucide-react';
-import PremiumBackground from '../components/PremiumBackground';
-
 const TEAM = [
     {
         name: 'Harsh Kumar',
@@ -60,7 +58,6 @@ export default function AboutPage() {
 
     return (
         <div style={{ minHeight: '100vh', position: 'relative', overflow: 'hidden' }}>
-            <PremiumBackground />
             <div style={{
                 maxWidth: 900,
                 margin: '0 auto',

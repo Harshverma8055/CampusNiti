@@ -71,13 +71,9 @@ function StudentCard({ s }: { s: Student }) {
                         </div>
                     </div>
                     <div style={{ display: 'flex', justifyContent: 'center', gap: 16, borderTop: '1px solid var(--border-color)', paddingTop: 12 }}>
-                        <div style={{ textAlign: 'center' }}>
+                        <div style={{ textAlign: 'center', width: '100%' }}>
                             <div style={{ fontSize: 16, fontWeight: 800, color: getRatingColor(s.rating) }}>{s.rating}</div>
-                            <div style={{ fontSize: 11, color: 'var(--text-muted)', display: 'flex', alignItems: 'center', gap: 3 }}><Star size={10} /> Rating</div>
-                        </div>
-                        <div style={{ textAlign: 'center' }}>
-                            <div style={{ fontSize: 16, fontWeight: 800, color: s.achievementCount > 0 ? 'var(--accent-amber)' : 'var(--text-muted)' }}>{s.achievementCount}</div>
-                            <div style={{ fontSize: 11, color: 'var(--text-muted)', display: 'flex', alignItems: 'center', gap: 3 }}><Trophy size={10} /> Awards</div>
+                            <div style={{ fontSize: 11, color: 'var(--text-muted)', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 3 }}><Star size={10} /> Rating</div>
                         </div>
                     </div>
                     <div style={{ marginTop: 12, color: 'var(--accent-primary)', fontSize: 12, fontWeight: 600, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 4 }}>

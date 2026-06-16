@@ -111,30 +111,7 @@ export default function PublicStudentProfile() {
                     </div>
                 </div>
 
-                {/* Achievements Gallery */}
-                <div className="card">
-                    <div className="card-header">
-                        <h2><Award size={20} style={{ display: 'inline', marginRight: 8, verticalAlign: 'middle' }} /> Achievement Gallery</h2>
-                    </div>
-                    <div className="card-body">
-                        {student.achievements && student.achievements.length > 0 ? (
-                            <div className="achievements-grid">
-                                {student.achievements.map((a) => (
-                                    <div key={a.id} className="achievement-card" style={{ padding: 16 }}>
-                                        <div className="achievement-icon" style={{ fontSize: 24, marginBottom: 8 }}>{a.badgeIcon}</div>
-                                        <div className="achievement-title" style={{ fontSize: 13 }}>{a.title}</div>
-                                        <div className="achievement-desc" style={{ fontSize: 11 }}>{a.description}</div>
-                                    </div>
-                                ))}
-                            </div>
-                        ) : (
-                            <div className="empty-state">
-                                <Award size={32} />
-                                <p>No achievements documented yet.</p>
-                            </div>
-                        )}
-                    </div>
-                </div>
+
             </div>
         </div>
     );
